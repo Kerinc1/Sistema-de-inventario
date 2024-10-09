@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- #cSpell:disable -->
+    <link rel="icon" href="en-linea.png">
+    <title>Inventario de Tienda - SúperStock</title>
+    <link rel="stylesheet" href="Css/Style.css">
+    <script src="Js/Script.Js" defer ></script> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="fondo">
+        
+        <div class="TituloWeb">
+            <h1>Gestión de Inventario</h1>
+        </div>
+
+        <!-- Formulario para agregar un producto -->
+        <div class="productoadd">
+            <form id="formAgregar">
+                <h2>Agregar Producto</h2>
+                <label for="nombreProducto">Nombre del producto:</label><br>
+                <input type="text" id="nombreProducto" name="nombreProducto" required placeholder="Escribe aquí ..."><br>
+                <label for="cantidadProducto">Cantidad:</label><br>
+                <input type="number" id="cantidadProducto" name="cantidadProducto" required placeholder="Escribe aquí ..."><br>
+                <button type="submit">Agregar Producto</button>
+            </form>
+        </div>
+
+        <!-- Formulario para actualizar la cantidad de un producto -->
+        <div class="update">
+            <form id="formActualizar">
+                <h2>Actualizar Cantidad de Producto</h2>
+                <label for="nombreActualizar">Nombre del producto:</label><br>
+                <input type="text" id="nombreActualizar" name="nombreActualizar" required placeholder="Escribe aquí ..."><br>
+                <label for="nuevaCantidad">Nueva cantidad:</label><br>
+                <input type="number" id="nuevaCantidad" name="nuevaCantidad" required placeholder="Escribe aquí ..."><br>
+                <button type="submit">Actualizar Producto</button>
+            </form>
+        </div>
+
+        <!-- Sección para mostrar los productos -->
+        <div class="product-list">
+            <h2>Lista de Productos</h2>
+            <table id="tablaProductos">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="listaProductos">
+                    <!-- Productos se agregarán dinámicamente aquí -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
